@@ -154,5 +154,8 @@ svg{
     top: 35%;
     font-size: 3rem;
   }
+    .video-box{
+    height: 90vh;
+  }
  }
 
