@@ -147,5 +147,12 @@ svg{
 
 
 
-
+@media (max-width: 767.98px) { 
+  .text{
+    width: 330px;
+    left: 59%;
+    top: 35%;
+    font-size: 3rem;
+  }
+ }
 
