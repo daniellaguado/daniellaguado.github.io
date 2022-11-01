@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+
+
+.up {
+  background-color: rgb(38, 50, 83);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 1;
+}
+
+.up svg {
+  width: auto;
+  height: 45px;
+  fill: rgb(134, 240, 130);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 10%;
+  color: white;
+}
+
+.nav-links a {
+  color: rgb(119, 116, 116);
+  text-decoration: none;
+}
+
+
+.nav-links>li {
+  display: inline-block;
+  padding: 0 20px;
+  position: relative;
+
+
+}
+
+.nav-links>li:hover {
+  font-weight: 600;
+
+}
+
+.nav-links>li::before {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color: rgb(49, 43, 107);
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  transition: 0.4s ease-out;
+
+}
+
+.nav-links li:hover::before {
+  width: 100%;
+
+}
+
+.logo img {
+  height: 4rem;
+  width: auto;
+  cursor: pointer;
+  transition: all 0.3s;
+
+}
+
+.logo :hover {
+  transform: scale(1.2);
+}
+
+
+.div-banner img {
+  width: 100%;
+}
+
+.texto-banner {
+  font-size: 20px;
+  align-self: center;
+}
+
+.texto-banner p:nth-child(2) {
+  font-size: 15px;
+}
+
+.space {
+  height: 4rem;
+}
+
+.card {
+  margin: 1% 1%;
+}
+
+.cards {
+  display: flex;
+}
+
+.btn-primary {
+  background-color: #2b50c7;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  scale: 1.1;
+}
+
+
+.btn-secondary {
+  background-color: rgba(51, 94, 234, .1);
+  color: #335eea;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  scale: 1.1;
+  background-color: rgba(51, 94, 234, .15) !important;
+  color: #335eea !important;
+
+}
+
+.icons svg {
+  width: 4rem;
+}
+
+.icons p {
+  padding: 3%;
+}
+
+.icons p:nth-child(2) {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.icons p:nth-child(3) {
+  color: #869ab8;
+}
+
+.iconos-card {
+  background-color: rgba(220, 220, 220, 0.11);
+  width: 100%;
+  height: 3rem;
+}
+
+.iconos-card img {
+  height: 3rem;
+}
+
+.status {
+  text-align: center;
+}
+
+.status>.andamento {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(236, 233, 26);
+  display: inline-block;
+}
+
+.status>.terminado {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  display: inline-block;
+}
+
+.status>.solo-codigo {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  display: inline-block;
+}
+
+.about-me img {
+  border-radius: 50%;
+  width: 30%;
+  text-align: center;
+}
+
+.skills-resp {
+  width: 100%;
+  height: 3rem;
+  display: none;
+  justify-content: space-between;
+  margin-bottom: 40%;
+
+}
+
+
+.skills {
+  /* background-color: red; */
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills img {
+  height: 3rem;
+  filter: grayscale(100%);
+
+}
+
+.skills-resp img {
+  height: 3rem;
+  padding: 1% 10%;
+  visibility: hidden !important;
+}
+
+.skills img:hover,
+.skills-resp img:hover {
+  height: 3rem;
+  filter: grayscale(0%);
+
+}
+
+.projects {
+  text-align: center;
+}
+
+.card-title {
+  height: 48px !important;
+}
+
+.card-text {
+  height: 120px;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+}
+
+
+@media (max-width:700px) {
+  header {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .cards {
+    display: block;
+  }
+
+  .card {
+    margin: 5% auto;
+  }
+
+  .skills-resp {
+    display: block;
+  }
+
+  .skills-resp img {
+    height: 3rem;
+    visibility: visible !important;
+  }
+
+  .skills img {
+    height: 3rem;
+    visibility: hidden !important;
+  }
+}
+
+.btn-light {
+  width: 40vh !important;
+}
+
+
+
+@media (max-width:467px) {
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0%;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .nav-links li:hover::before {
+    width: 0%;
+  }
+}
