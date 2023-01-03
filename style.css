@@ -303,4 +303,7 @@ header {
   .nav-links li:hover::before {
     width: 0%;
   }
+  .up {
+    right: 5%;
+  }
 }
